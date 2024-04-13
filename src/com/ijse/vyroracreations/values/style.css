@@ -1,0 +1,117 @@
+.top-bar{
+    -fx-background-color: #083066;
+}
+
+.background-image{
+    -fx-background-image: url("../assets/wedding.jpg");
+    -fx-background-size: cover;
+}
+
+.blueButton{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 100;
+}
+
+.blueButton:hover {
+    -fx-background-color: #70cdf3;
+    -fx-background-radius: 100;
+}
+
+.button-rounded{
+    -fx-background-color: #0c668b;
+    -fx-background-radius: 32;
+}
+
+.shadow{
+    -fx-effect: dropShadow(one-pass-box, rgba(0,0,0,0.3), 10.0, 0.0, 0.0, 10.0);
+}
+.newCustomer-btn{
+    -fx-background-color:  #0652DD;
+    -fx-background-radius: 30;
+}
+.newCustomer-btn:hover{
+    -fx-background-color: #6b7db3;
+    -fx-background-radius: 30;
+}
+
+.button-rounded:hover{
+    -fx-background-color: #70cdf3;
+    -fx-background-radius: 32;
+    -fx-border-color: #0f77b1;
+    -fx-border-radius: 30;
+    -fx-border-width: 4;
+}
+
+.blue-buttonHover:hover{
+    -fx-background-color: #6b7db3;
+}
+
+.login-context{
+    -fx-background-color: linear-gradient(#130636, #892CCA);
+}
+
+.text-field{
+    -fx-text-fill: grey;
+}
+
+.jfx-text-field{
+    -fx-prompt-text-fill: #c2c2c2;
+}
+
+.marketplace-btn{
+    -fx-background-radius: 0 50 50 50;
+}
+
+.chosen-product-card{
+    -fx-background-color: #778beb;
+    -fx-background-radius: 30;
+}
+
+.product-item{
+    -fx-background-radius: 30;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.form-textField{
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #747d8c;
+}
+
+.form-search-textField{
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #dfe4ea;
+}
+
+.listing-btn{
+    -fx-background-color: #40407a;
+    -fx-background-radius: 30;
+}
+
+.listing-btn:hover{
+    -fx-background-color: #706fd3;
+}
+
+.employee-search-textField{
+    -fx-prompt-text-fill: #a4b0be;
+}
+
+.listing-btn-dashboard{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 30;
+}
+
+.listing-btn-dashboard:hover{
+    -fx-background-color: #486684;
+}
+
+.disable-txtField{
+    -fx-prompt-text-fill: #d1d8e0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+

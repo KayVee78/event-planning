@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="hiredEmployeeForm" prefHeight="627.0" prefWidth="1037.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.HiredEmployeeFormController">
+   <children>
+      <Label layoutX="55.0" layoutY="7.0" styleClass="employee-search-textField" stylesheets="@../values/style.css" text="Hired Employee Details" textFill="#dfe4ea">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Separator layoutX="55.0" layoutY="51.0" prefHeight="3.0" prefWidth="500.0" />
+      <HBox layoutX="40.0" layoutY="96.0" prefHeight="31.0" prefWidth="907.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtId" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="139.0" promptText="id" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtName" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="191.0" promptText="Name" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAddress" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="177.0" promptText="Address" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="302.0" promptText="Email" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="40.0" layoutY="142.0" prefHeight="31.0" prefWidth="793.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtTelNo" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="190.0" promptText="Tel No" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtSpecialization" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="198.0" promptText="Specialization" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtWages" onKeyPressed="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="183.0" promptText="Wages" style="-fx-background-color: #ced6e0;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Button layoutX="866.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnNewEmployee" prefHeight="33.0" prefWidth="148.0" style="-fx-background-color: #27ae60;" text="+ New Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSaveEmployee" layoutX="822.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnSaveEmployeeOnAction" prefHeight="44.0" prefWidth="192.0" style="-fx-background-color: #27ae60;" text="Save Employee" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtSearch" layoutX="40.0" layoutY="196.0" prefHeight="44.0" prefWidth="716.0" promptText="Search Employee" style="-fx-background-color: #a4b0be;" styleClass="form-search-textField" stylesheets="@../values/style.css">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblEmployee" layoutX="22.0" layoutY="301.0" prefHeight="273.0" prefWidth="991.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="57.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="112.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="131.0" text="Address" />
+            <TableColumn fx:id="colEmail" prefWidth="205.0" text="Email" />
+            <TableColumn fx:id="colTelNo" minWidth="0.0" prefWidth="135.0" text="Tel No" />
+            <TableColumn fx:id="colSpecialization" prefWidth="134.0" text="Specialization" />
+            <TableColumn fx:id="colWages" prefWidth="120.0" text="Wages" />
+            <TableColumn fx:id="colOption" prefWidth="96.0" text="Option" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

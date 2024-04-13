@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="VendorForm" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #083066;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.VendorFormController">
+   <children>
+      <Label layoutX="272.0" layoutY="17.0" text="Vendor Form" textFill="#dfe4ea">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="1214.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnNewVendor" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="+ New Vendor" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="130.0" layoutY="82.0" prefHeight="3.0" prefWidth="1052.0" />
+      <HBox layoutX="59.0" layoutY="102.0" prefHeight="31.0" prefWidth="1307.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtId" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="id" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCompanyName" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Company Name" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtAddress" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Address" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="59.0" layoutY="149.0" prefHeight="31.0" prefWidth="1307.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtTelNo" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Tel No" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Email" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <TextField fx:id="txtSearch" layoutX="59.0" layoutY="215.0" prefHeight="44.0" prefWidth="1059.0" promptText="Search Vendor" style="-fx-background-color: #71AAF4;" styleClass="form-search-textField" stylesheets="@../values/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSaveVendor" layoutX="1160.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnSaveVendorOnAction" prefHeight="40.0" prefWidth="192.0" style="-fx-background-color: #2980b9;" text="Save Vendor" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblVendor" layoutX="59.0" layoutY="292.0" prefHeight="375.0" prefWidth="1285.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="113.0" text="ID" />
+          <TableColumn fx:id="colCompanyName" prefWidth="233.0" text="Company Name" />
+            <TableColumn fx:id="colAddress" prefWidth="224.99996948242188" text="Address" />
+            <TableColumn fx:id="colTelNo" prefWidth="244.0" text="Tel No" />
+            <TableColumn fx:id="colEmail" prefWidth="334.0" text="Email" />
+            <TableColumn fx:id="colOption" prefWidth="136.0" text="Option" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="27.0" layoutY="14.0" onAction="#openVendorCatalogueOnAction" prefHeight="40.0" prefWidth="153.0" stylesheets="@../values/style.css" text="Catalogue" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-catalog-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="listing-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

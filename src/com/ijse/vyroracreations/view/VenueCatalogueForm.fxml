@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="venueCatalogue" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.VenueCatalogueFormController">
+   <children>
+      <HBox layoutY="130.0" prefHeight="441.0" prefWidth="1366.0" spacing="120.0" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="315.0" prefWidth="248.0" style="-fx-background-color: #70a1ff;" styleClass="product-item" stylesheets="@../values/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="126.0" text="Outdoor Events" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="22.0" prefWidth="248.0" />
+                  <ImageView fitHeight="126.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/outdoor.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="120.0" prefWidth="210.0" text="Outdoor event planning, &#10;decorating and suggestion &#10;of listed&amp;recommended &#10;outdoor locations" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="27.0" prefWidth="248.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="100.0" prefWidth="231.0" text="-Office gatherings&#10;-Weddings&#10;-Get togethers&#10;-Birthday (evenings/nights)&#10;-Family gatherings" textFill="#4d5154">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="315.0" prefWidth="248.0" style="-fx-background-color: #2ed573;" styleClass="product-item" stylesheets="@../values/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="115.0" text="Indoor Events" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="22.0" prefWidth="248.0" />
+                  <ImageView fitHeight="126.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/indoor.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="120.0" prefWidth="210.0" text="Indoor event planning, &#10;decorating and suggestion &#10;of listed&amp;recommended &#10;hotels/resorts" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="10.0" prefWidth="248.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="100.0" prefWidth="231.0" text="-Launching Events&#10;-Office gatherings&#10;-Weddings&#10;-Get togethers&#10;-Birthday (evenings/nights)&#10;-School Events" textFill="#4d5154">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="315.0" prefWidth="248.0" style="-fx-background-color: #ff6b81;" styleClass="product-item" stylesheets="@../values/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="150.0" text="Destination Events" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="14.0" prefWidth="248.0" />
+                  <ImageView fitHeight="126.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/destination.jpeg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="134.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="134.0" prefWidth="176.0" text="Event planning, &#10;decorating for your &#10;preferred destination &#10;and suggestion of &#10;listed&amp;recommended &#10;destinations.&#10;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="26.0" prefWidth="248.0" />
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="65.0" prefWidth="231.0" text="-Weddings&#10;-Gatherings&#10;-Birthdays" textFill="#4d5154">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="315.0" prefWidth="248.0" style="-fx-background-color: #ffa502;" styleClass="product-item" stylesheets="@../values/style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="113.0" text="Home Parties" textFill="#ecf0f1">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="14.0" prefWidth="248.0" />
+                  <ImageView fitHeight="126.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/home.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <HBox alignment="CENTER" prefHeight="83.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="98.0" prefWidth="176.0" text="Next Level planning &amp; &#10;decoration of parties at &#10;your residence" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="28.0" prefWidth="248.0" />
+                  <HBox alignment="CENTER" prefHeight="72.0" prefWidth="248.0">
+                     <children>
+                        <Label prefHeight="98.0" prefWidth="231.0" text="-Birthdays&#10;-Wedding Receptions&#10;-Family Gatherings" textFill="#4d5154">
+                           <font>
+                              <Font name="Cambria Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="523.0" layoutY="20.0" text="Venue Catalogue" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="19.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnGoBackOnAction" prefHeight="39.0" prefWidth="23.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-prev-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <JFXButton layoutX="1160.0" layoutY="14.0" onAction="#openVenueFormOnAction" prefHeight="50.0" prefWidth="192.0" stylesheets="@../values/style.css" text="Venue Listings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-search-in-list-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="listing-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="marketPlaceContext" prefHeight="627.0" prefWidth="1037.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.MarketPlaceFormController">
+   <children>
+      <HBox layoutX="86.0" layoutY="142.0" prefHeight="141.0" prefWidth="888.0" spacing="15.0">
+         <children>
+            <JFXButton onAction="#openPurchasableProducts" prefHeight="169.0" prefWidth="218.0" style="-fx-background-color: #9b59b6;" styleClass="marketplace-btn" stylesheets="@../values/style.css" text="Products" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#openRentableItems" prefHeight="169.0" prefWidth="218.0" style="-fx-background-color: #3498db;" styleClass="marketplace-btn" stylesheets="@../values/style.css" text="Rentable Items" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#openVenues" prefHeight="169.0" prefWidth="218.0" style="-fx-background-color: #1abc9c;" styleClass="marketplace-btn" stylesheets="@../values/style.css" text="Venues" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#openVendors" prefHeight="169.0" prefWidth="218.0" style="-fx-background-color: #ED4C67;" styleClass="marketplace-btn" stylesheets="@../values/style.css" text="Vendors" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Button layoutX="947.0" layoutY="20.0" mnemonicParsing="false" onAction="#goHomeOnAction" prefHeight="39.0" prefWidth="23.0" style="-fx-background-color: #FFE6EF;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-home-page-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="413.0" layoutY="23.0" text="Marketplace" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="206.0" fitWidth="244.0" layoutX="653.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/animation_200_lauexfbr.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

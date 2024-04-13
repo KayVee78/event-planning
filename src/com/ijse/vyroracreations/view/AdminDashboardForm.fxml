@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashboardContext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.AdminDashboardFormController">
+   <children>
+      <VBox layoutY="73.0" prefHeight="627.0" prefWidth="330.0" style="-fx-background-color: #083066;">
+         <children>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openHomeOnAction" prefHeight="51.0" prefWidth="330.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-home-page-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openMarketPlaceOnAction" prefHeight="51.0" prefWidth="331.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Marketplace" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-online-store-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openListingsOnAction" prefHeight="51.0" prefWidth="331.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Listings" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-popup-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openPlaceOrderOnAction" prefHeight="51.0" prefWidth="334.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-plus-key-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openOrderDetailsOnAction" prefHeight="51.0" prefWidth="332.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Order Details" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-purchase-order-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openHiredEmployees" prefHeight="51.0" prefWidth="332.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Hired Employee Details" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-employees-64.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#openCustomerRegistration" prefHeight="51.0" prefWidth="334.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Customer Registration" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-user-60.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BOTTOM_LEFT" onAction="#goBackOnAction" prefHeight="67.0" prefWidth="334.0" styleClass="blue-buttonHover" stylesheets="@../values/style.css" text="Go Back" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-hand-left-50%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="74.0" prefWidth="1366.0" styleClass="top-bar" stylesheets="@../values/style.css">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/moon%20(1).png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="35.0" prefWidth="257.0" text="Vyrora Creations" textFill="WHITE">
+               <font>
+                  <Font name="Forte" size="31.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="74.0" prefWidth="1045.0" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="pane" layoutX="330.0" layoutY="73.0" prefHeight="627.0" prefWidth="1037.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="523.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/animation_500_lao2r63l.gif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="198.0" fitWidth="402.0" layoutX="30.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Brazuca%20-%20Chart.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="57.0" layoutY="230.0" text="Out sourcing wide range of &#10;DECORATIVE ITEMS" textFill="#eeff00">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

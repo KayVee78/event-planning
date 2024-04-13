@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SalesReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c2058128-85a5-449b-b919-d7b5c2d22c22">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<queryString language="SQL">
+		<![CDATA[select * from `order`]]>
+	</queryString>
+	<field name="orderId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="orderId"/>
+		<property name="com.jaspersoft.studio.field.label" value="orderId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order"/>
+	</field>
+	<field name="date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order"/>
+	</field>
+	<field name="totalCost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="totalCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="totalCost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order"/>
+	</field>
+	<field name="customer_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="customer_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="75" splitType="Stretch">
+			<staticText>
+				<reportElement x="115" y="10" width="310" height="50" uuid="873c5138-990e-45a5-8f99-c6e84ab57d2f"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sales Report of the Day]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="450" y="10" width="100" height="30" uuid="5d0f2879-5450-4ee8-8e52-e1f1d252169f"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="450" y="40" width="100" height="30" uuid="475ac02f-ef94-4599-b88e-97eb453f2b12"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="100" height="30" uuid="a557c739-b942-4f5c-9921-97b03e9d2305">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21d453d3-017d-43ec-9226-f7bde91ef5a4"/>
+				</reportElement>
+				<text><![CDATA[orderId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="0" width="100" height="30" uuid="5866be28-1d7a-4e55-9752-f4ca21f8b314">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1956c52a-0de4-4b6b-8277-886a2244aa49"/>
+				</reportElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="100" height="30" uuid="1797847e-a35d-49dc-b7d0-59af14dd3ab4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20aaea0a-299e-4cb7-9734-71ec427e43e1"/>
+				</reportElement>
+				<text><![CDATA[totalCost]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="100" height="30" uuid="76312675-1d12-451e-a5ba-e19c5cf18834">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="105dd31f-c021-40db-b723-0d492d6a1494"/>
+				</reportElement>
+				<text><![CDATA[customer_id]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="30" width="100" height="30" uuid="2ffc7a78-ce48-4ef2-92cd-d0fd940cd740">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="21d453d3-017d-43ec-9226-f7bde91ef5a4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{orderId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="30" width="100" height="30" uuid="df83e228-be8e-4ffd-9dd2-080a45eeefed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1956c52a-0de4-4b6b-8277-886a2244aa49"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="30" width="100" height="30" uuid="fb8e0b41-b77f-4de0-863e-7e01b51d40d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="20aaea0a-299e-4cb7-9734-71ec427e43e1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{totalCost}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="30" width="100" height="30" uuid="15c62bf0-b268-4c5f-8fe0-8df709643a0e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="105dd31f-c021-40db-b723-0d492d6a1494"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="44" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="203" y="10" width="149" height="30" uuid="502f164d-f17f-465f-ae9f-c15e1b107cdd"/>
+				<text><![CDATA[Sales Report - Vyrora Creations]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="220" y="30" width="100" height="17" uuid="b56932ed-5ecc-477a-a76f-59a604c6e98c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

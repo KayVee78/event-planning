@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rentableForm" prefHeight="700.0" prefWidth="1366.0" style="-fx-background-color: #083066;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.vyroracreations.controller.RentableItemFormController">
+   <children>
+      <Label layoutX="272.0" layoutY="17.0" text="Rentable Item Form" textFill="#dfe4ea">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Button layoutX="1203.0" layoutY="19.0" mnemonicParsing="false" onAction="#btnNewRentable" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: #2980b9;" text="+ New Rentable" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Separator layoutX="130.0" layoutY="78.0" prefHeight="7.0" prefWidth="1052.0" />
+      <HBox layoutX="59.0" layoutY="102.0" prefHeight="31.0" prefWidth="1307.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtCode" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Code" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDescription" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Description" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtUnitPrice" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="339.0" promptText="Unit Price" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtQtyOnHand" onKeyReleased="#txtFieldKeyReleased" prefHeight="31.0" prefWidth="133.0" promptText="QTY On Hand" style="-fx-background-color: #B8D4F9;" styleClass="form-textField" stylesheets="@../values/style.css">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <TextField fx:id="txtSearch" layoutX="59.0" layoutY="160.0" prefHeight="44.0" prefWidth="1025.0" promptText="Search Product" style="-fx-background-color: #71AAF4;" styleClass="form-search-textField" stylesheets="@../values/style.css">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnSaveRentable" layoutX="1124.0" layoutY="160.0" mnemonicParsing="false" onAction="#btnSaveRentableOnAction" prefHeight="44.0" prefWidth="217.0" style="-fx-background-color: #2980b9;" text="Save Rentable" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tblRentable" layoutX="59.0" layoutY="234.0" prefHeight="433.0" prefWidth="1285.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="121.0" text="Code" />
+            <TableColumn fx:id="colDescription" prefWidth="427.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="277.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="294.0" text="QTY On Hand" />
+            <TableColumn fx:id="colOption" prefWidth="165.0" text="Option" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="22.0" layoutY="14.0" onAction="#openRentableCatalogueOnAction" prefHeight="40.0" prefWidth="153.0" stylesheets="@../values/style.css" text="Catalogue" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-catalog-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <styleClass>
+            <String fx:value="listing-btn" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </JFXButton>
+   </children>
+</AnchorPane>
