@@ -1,0 +1,12 @@
+![Screenshot 2024-04-09 050504](https://github.com/KayVee78/event-planning-system/assets/90994452/fb49c894-82be-4baa-a6ae-c454b6fd2892)
+![Screenshot 2024-04-09 050552](https://github.com/KayVee78/event-planning-system/assets/90994452/15015f99-83f0-424e-8633-b4cbcf07eaec)
+![Screenshot 2024-04-09 050618](https://github.com/KayVee78/event-planning-system/assets/90994452/b25b3c99-998c-4ecd-99ea-d61bd8f304e7)
+![Screenshot 2024-04-09 050643](https://github.com/KayVee78/event-planning-system/assets/90994452/d7f36bce-8cd6-458c-8279-f03230494255)
+![image](https://github.com/KayVee78/event-planning-system/assets/90994452/3c4dfa73-9125-4360-9e6d-ddbd767f8d2b)
+![Screenshot (71)](https://github.com/KayVee78/event-planning-system/assets/90994452/53504c3a-3dd6-4dd7-8b1a-7136cb3e5424)
+![Screenshot (72)](https://github.com/KayVee78/event-planning-system/assets/90994452/a887270f-5523-4c94-9bfd-0a4ccfe8d9a7)
+![Screenshot (73)](https://github.com/KayVee78/event-planning-system/assets/90994452/0a6c6017-fa0b-4906-a451-d97f073394c5)
+![Screenshot (74)](https://github.com/KayVee78/event-planning-system/assets/90994452/fc0fe7cc-5127-4dcb-8449-fcb72a337f95)
+![Screenshot (75)](https://github.com/KayVee78/event-planning-system/assets/90994452/f0be1aa4-daf8-4a31-a342-26ca5e694b9b)
+![image](https://github.com/KayVee78/event-planning-system/assets/90994452/55e1ecc2-6bc6-4686-9b0b-5dd4b55d45a6)
+
